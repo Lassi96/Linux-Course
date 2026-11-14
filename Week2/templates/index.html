@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 – Python App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --btn-bg: #334155;
+            --btn-hover: #475569;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            border: 1px solid #334155;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+        }
+
+        .counter {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: #0f172a;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .badge {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.6rem 1.2rem;
+            background-color: var(--btn-bg);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--btn-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-github {
+            background-color: #24292e;
+        }
+
+        .btn-github:hover {
+            background-color: #2f363d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Week 2 Python App</h1>
+        
+        <div class="counter">
+            This page has been loaded <span class="badge">{{ kaynnit }}</span> times.
+        </div>
+
+        <div class="nav-buttons">
+            <a href="/" class="btn"><i class="fas fa-home"></i> HOME</a>
+            <a href="https://github.com/Lassi96/Linux-Course" target="_blank" class="btn btn-github">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
